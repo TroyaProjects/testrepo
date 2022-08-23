@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="maindiv">
+
+        <title>Web App – Simple Interest Calculator</title>
+            <h1>Simple Interest Calculator</h1>
+        
+        <label id="amountlabel">Amount</label>
+        <div class="control"><input type="number" id="principal"></div>  <br><br>
+    
+
+       <label id="ratelabel">Interest rate</label>
+       <div class="control">
+       <input onchange="updateRate()" type="range"  id="rate" min=1 max=20 step=0.25 value="rate_val">
+         
+       <span id="rate_val">
+        10.25
+        </span>%</div>
+        <br/>
+        <br>
+        <label id="yearslabel">No. of Years</label>
+        <div class="control"><select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></div>
+
+          <br><br>
+
+          <form id="form1" onclick="return validate()">
+        <button type="button" onclick="compute()">Compute Interest</button><br><br>
+    </form>
+            
+            <bold>If</bold> you deposit <mark><span id="out1"></span></mark>,<br>
+                <bold>at</bold> an interest rate of <mark><span id="out2"></span>%</mark>,<br>
+                    <bold>You</bold> will receive an amount of <mark><span id="output"></span></mark>,<br>
+                        <bold>in</bold> the year <mark><span id="out3"></span></mark>.<br>
+        
+        <br/><br/>
+        <footer>
+            &#169; This Calculator belongs to Chris
+    </footer>
+    
+    </div>
+    </body>
+</html>
