@@ -1,4 +1,2 @@
 # testrepo
-Just testing...
-
-...and testing.
+Code examples and testing.
